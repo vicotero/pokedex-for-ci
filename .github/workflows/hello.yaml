@@ -7,8 +7,12 @@ on:
 
 jobs:
   hello_world:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - name: Echo the message
         run: |
-          echo "Hola Birji!"
+          echo "Hola Mate!"
+      - name: Dame la fecha
+        run: date
+      - name: Buscando archivos
+        run: ls -l
